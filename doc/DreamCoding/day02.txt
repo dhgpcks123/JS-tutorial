@@ -1,0 +1,5 @@
+VanillaJS는 JavaScript의 한 종류로, 브라우저를 통해 제공된 JavaScript
+Library나 Framework가 없는 JavaScript(날 것의 JavaScript)
+
+일반 JavaScript가 다른 것들에 비해 엄청 빠르다
+모든 웹브라우저에는 JavaScript가 설치되어 있다
