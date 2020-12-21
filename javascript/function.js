@@ -1,3 +1,4 @@
+'use strict';
 // Function
 // -- fundamental building block 
 // -- subprogram can be used multiple times
@@ -60,6 +61,7 @@ function printAll(...args){
         console.log(arg);
     }   // 확인할 때 쓰겠네.... ? 
 }
+
 printAll('dream', 'coding', 'ellie');
 var array = ['dream', 'coding', 'ellie'];
 printAll(array);
@@ -186,9 +188,12 @@ function calculate(command, a, b){
         case 'remainder' :
             result = a%b;
         break;
+        default:
+            throw Error('unknown command');
     }
     return result;
 }
 
 var result = calculate('substract', 65, 15);
 console.log(result);
+
