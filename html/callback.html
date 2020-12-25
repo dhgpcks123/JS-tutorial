@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script defer src="/async/callback.js"></script>
+</head>
+<body>
+   <h1>
+      콜백 함수의 동기적 실행과 비동기적 실행
+   </h1>
+   <pre>
+      콜백함수 = 나중에 실행하는 함수
+      
+      setTimeout( function(){
+         console.log('hello');
+      }, 1000);
+
+      셋타임함수야!
+      1초 있다가 function을 호출해~
+      
+      여기서 콜백함수는?
+      function
+
+
+      <p>
+      function fakeSetTimeout(callback, delay){
+         callback();
+      }
+      동기적으로 실행한다? 순차적으로 실행한다.
+      console.log(0);
+      fakeSetTimeout(function(){
+         console.log('hello')
+      }, 0);
+      console.log(1);
+         ==> 0 , hello, 1
+      </p>
+      <p>
+      비동기적으로 실행했다.
+      console.log(0);
+      setTimeout(function(){ //브라우저에서 제공
+         console.log('hello');
+      }, 0)
+      console.log(1);
+         ==> 0, 1, hello
+      </p>
+   </pre>
+
+</body>
+</html>
