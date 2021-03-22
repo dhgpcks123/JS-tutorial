@@ -1,0 +1,35 @@
+/Hi/gm
+Hi 텍스트 찾아줌
+
+/Hi|Hello/gm
+또는 연산자 사용가능 Hi와 Hello를 찾아줌
+-> 그냥 match 결과만 Hi, Hello로 나옴
+
+/(Hi|Hello)/gm
+->match도 되고, Group Hi, Group Hello 그룹이 지정된다.
+
+/(Hi|Hello)|(And)/gm
+-> Group1에 hi와 hello 매칭되고, Group2에 And가 매칭된다.
+
+/gr(e|a)y/gm
+gray, grey 찾아줌 그룹으로!
+
+/gr(?:e|a)/gm
+그룹 쓰기 싫다?
+
+
+/gr(e|a|d)y/gm
+gray, grey, grdy
+이런거 한방에 쓰는 법!
+/gr[aed]y/gm
+/gr[abcdef]y/gm
+/gr[a-f]y/gm
+
+/[a-f]/gm
+a~f까지 만족하는 거 찾음
+
+/[a-zA-Z0-9]/gm
+
+제외한 모든 걸 찾고 싶다고? ^
+/[^a-zA-Z0-9]/gm
+

@@ -1,0 +1,19 @@
+/gra?y/gm
+없거나 있거나
+-> gray, gry
+
+/gra*y/gm
+있거나 없거나 많거나
+-> gray, gry, graay, graaay.
+
+/gra+y/gm
+하나 있거나 그 이상의 것 선택
+
+/gra{2}y/gm
+-> a가 2번 나오는 거 선택
+
+/gra{2,3}y/gm
+-> a가 최소 2개. 최대 3개까지
+
+/gra{2,}y/gm
+-> a가 최소 2개

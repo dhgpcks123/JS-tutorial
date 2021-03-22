@@ -1,0 +1,22 @@
+/regex?/
+텍스트에서 우리가 원하는 패턴의 문자를 찾을 때 아주 유용하다.
+찾은 문자 -> 변경 할 때 용이하다.
+
+/regex?/
+
+1950 수학자가 만들어서 -> 유닉스에서 쓰다가 -> 프로그래밍 언어에서 사용(+에디터에서도 제공)
+
+/regex?/i
+
+ //
+ 나는 정규식이야
+
+ regex?
+ patern이야
+ 
+ i
+ flag
+
+ https://github.com/dream-ellie/regex
+ https://regexr.com/5ml92 //학습하기 아주 좋은 사이트입니다.
+ https://regexone.com/
